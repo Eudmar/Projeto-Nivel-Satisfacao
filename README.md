@@ -17,21 +17,29 @@ Para este projeto, os dados estão disponíveis no [Kaggle](https://www.kaggle.c
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# Imports
+# manipulação de dados
+import pandas as pd
+import numpy as np
+# gráficos
+import seaborn as sns
+from scipy import stats
+import matplotlib.pyplot as plt
+# eliminação recursiva de atributos
+from sklearn.feature_selection import RFE
+from sklearn.linear_model import LogisticRegression
+# Preprocessamento
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
+# Cross Validation
+from sklearn.model_selection import KFold
+from sklearn.model_selection import cross_val_score
+# Modelo XGBoost
+from sklearn.metrics import accuracy_score
+from xgboost import XGBClassifier
+# evitar avisos de warnings
+import warnings
+warnings.filterwarnings("ignore")
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
